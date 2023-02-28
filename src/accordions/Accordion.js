@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import arrow from '../accordions/downArrow.png'
 
 const Accordion = ({ value }) => {
-
+    console.log(value)
     const [open , setOpen]=useState(false)
     const openHandler = index =>{
        if(open === index ){
@@ -59,7 +59,7 @@ const Accordion = ({ value }) => {
             {filterFQ.map((item , index) => {
                 return <div className='border bg-zinc-200 select-none cursor-pointer mb-4 ' onClick={()=>openHandler(index)} key={Math.random()} >
                     <div className='flex justify-between mx-4'>
-                        <img className='w-6 ' src={arrow} />
+                        <img className={`w-6 ${open===index? "rotate-180 " : ""}`} src={arrow} />
                         <p className='text-xl '>{item.title}</p>
 
 
