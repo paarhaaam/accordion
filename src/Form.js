@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Accordion from './accordions/Accordion';
-import arrow from './accordions/downArrow.png'
+
 
 const Form = () => {
     const [value, setValue] = useState("sfgf");
@@ -14,12 +14,12 @@ const navigate = useNavigate()
  
     
   return (
-    <div>
-        <form className='border w-fit' >
+    <div className=' mb-8 static w-full mt-4  '>
+        <form className='ml-[48%] mt-12' >
             
            
-            <select  onChange={handleChange}>
-            <option className='select-none' selected disabled hidden value="">انتخاب کنید</option>
+            <select className='border'  onChange={handleChange}>
+            <option className='select-none'  defaultValue hidden  value="">انتخاب کنید</option>
             <option  value="daneshjo">دانشجو</option>
             <option value="karfarma">کارفرما</option>
             
