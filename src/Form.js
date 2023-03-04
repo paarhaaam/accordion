@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import Accordion from './accordions/Accordion';
 
 
@@ -15,11 +15,11 @@ const navigate = useNavigate()
     
   return (
     <div className=' mb-8 static w-full mt-4  '>
-        <form className='ml-[48%] mt-12' >
+        <form className='w-full flex justify-center  mt-12' >
             
            
-            <select className='border'  onChange={handleChange}>
-            <option className='select-none'  defaultValue hidden  value="">انتخاب کنید</option>
+            <select className=' border-indigo-500 border-2 text-center selection:border-indigo-500 '  onChange={handleChange}>
+            <option className='select-none'   hidden  value>انتخاب کنید</option>
             <option  value="daneshjo">دانشجو</option>
             <option value="karfarma">کارفرما</option>
             

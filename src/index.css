@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.rightJustify{
+    text-align: justify;
+    text-align-last: right;
+    }
+
+    @font-face {
+        font-family: 'vazir';
+        src: local('vazir'), url(./vazir-font-v16.1.0/Vazir-Bold.ttf) format('truetype');
+      }
+      p {
+        font-family: vazir;
+      }
+
+   
