@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {  useNavigate } from 'react-router-dom';
-import Accordion from './accordions/Accordion';
+import Data from './accordions/Data';
 
 
 const Form = () => {
@@ -27,8 +27,8 @@ const navigate = useNavigate()
         </form>
 
         
-       
-             <Accordion value={value}/>
+              <Data value={value}/>
+             
   </div>
   )
 }
